@@ -7,10 +7,11 @@
   <title>Paris Baguette</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       
 </head>
@@ -30,12 +31,77 @@
               <li><a href="#">store</a></li>
               <li><a href="#">delivery</a></li>
               <li><a href="#">promotion</a></li>
-              <li><a href="#"><img src="./img/search.png" alt="search"></a></li>
+              <a href=""><i class="fa fa-search" aria-hidden="true" style="color:white"></i></a>
             </ul>
           </div>
         </div>
       </div>
     </header>
+    <!--//header-->
+    <div id="slider">
+      <div class="slider">
+        <div><a href="#"><img src="./img/slider1.jpeg" alt="슬라이더1"></a></div>
+        <div><a href="#"><img src="./img/slider2.jpg" alt="슬라이더2"></a></div>
+        <div><a href="#"><img src="./img/slider3.jpeg" alt="슬라이더3"></a></div>
+        <div><a href="#"><img src="./img/slider4.jpg" alt="슬라이더4"></a></div>
+      </div>
+      <span class="prev" id="arrow_prev"><i class="fa fa-angle-left fa-5x" aria-hidden="true" style="color:white"></i></span>
+      <span class="next" id="arrow_next"><i class="fa fa-angle-right fa-5x" aria-hidden="true" style="color:white"></i></span>
+    </div>
   </div>
+
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://use.fontawesome.com/528907d8e4.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    prevArrow: $('#arrow_prev'),
+    nextArrow: $('#arrow_next'),
+  });
+
+
+  var wHeight = $(window).height();
+    var dHeight = $(document).height();
+    var navHeight = $("#nav").outerHeight();
+    var lastScrollTop = 0;
+    var moveScroll;
+
+    $(window).scroll(function(event){     //스크롤 감지
+      moveScroll = true;
+    });
+
+    setInterval(() => {
+      if(moveScroll){
+        hasScroll();
+        moveScroll = false;
+      }
+    }, 250);  //스크롤 감지를 0.25초마다 실행
+
+    function hasScroll(){
+      var wScroll = $(this).scrollTop();
+
+      if(wScroll > lastScrollTop && wScroll > navHeight){
+        //스크롤을 내렸을때
+        $("#nav").addClass("on");
+
+      }else{
+        //스크롤을 올렸을때
+        if(wScroll + wHeight < dHeight){
+          $("#nav").removeClass("on")
+        }
+      }
+      lastScrollTop = wScroll;
+    }
+  </script>
 </body>
 </html>
