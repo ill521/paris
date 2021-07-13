@@ -87,6 +87,7 @@ li {
 a {
   text-decoration: none;
   box-sizing: border-box;
+  color: inherit;
   
 }
 body {font-family: 'Noto Sans KR','Lato','Montserrat', sans-serif;}
@@ -114,4 +115,18 @@ body {font-family: 'Noto Sans KR','Lato','Montserrat', sans-serif;}
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+.clearfix:before, .clearfix:after {
+  display: block;
+  content: '';
+  line-height: 0;
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+.clearfix {
+*zoom: 1;
 }
