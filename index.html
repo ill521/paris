@@ -17,7 +17,7 @@
       
 </head>
 <body>
-  < id="wrap">
+  <div id="wrap">
     <header id="header">
       <div class="container">
         <div class="row">
@@ -115,21 +115,56 @@
             <h3 class="showMore"><a href="#">show more</a></h3>
             <ul>
               <li>
-                <a href="#">
-                  <div class="story">
-                    <div class="picture">
-                      <img src="" alt="">
-                      <h3 class="pbvideo">PB VIDEO</h3>
-                      <span class="play"></span>
-                    </div>
-                    <div class="storyDesc">
-                      <p>bread video</p>
-                      <h3>파리바게뜨 X 핏블리 = 핏리바게뜨</h3>
-                      <span>핏블리의 최애 델리셔스는 어떤걸까요? 파이바게뜨와 핏블리의 델리셔스한 만남을 공개합니다!</span>
-                      <em>2021-07-02</em>
-                    </div>
-                  </div>
+                <a href="#" class="storyPic">
+                  <img src="./img/story1.jpg" alt="핏블리">
                 </a>
+                <div class="storyDesc">
+                  <a href="#">
+                    <p>bread video</p>
+                    <h3>파리바게뜨 X 핏블리 = 핏리바게뜨</h3>
+                    <span>핏블리의 최애 델리셔스는 어떤걸까요? 파이바게뜨와 핏블리의 델리셔스한 만남을 공개합니다!</span>
+                  </a>
+                  <em>2021-07-02</em>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="storyPic">
+                  <img src="./img/story2.jpg" alt="핏블리">
+                </a>
+                <div class="storyDesc">
+                  <a href="#">
+                    <p>bread video</p>
+                    <h3>파리바게뜨 X 요리용디</h3>
+                    <span>파리바게뜨 델리셔스로 그녀를 위한 도시락 만들기! 아직 소개팅 전이지만 혹~시 집에 놀러올 수도 있으니까?</span>
+                  </a>
+                  <em>2021-07-02</em>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="storyPic">
+                  <img src="./img/story3.jpg" alt="핏블리">
+                </a>
+                <div class="storyDesc">
+                  <a href="#">
+                    <p>bread video</p>
+                    <h3>파바가 직접 만든 인생델리, 델리셔스!</h3>
+                    <span>아직도 인생 샐러드, 샌드위치 찾아서 헤매시나요? 정답은 파바 델리로 찾으세요!</span>
+                  </a>
+                  <em>2021-07-02</em>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="storyPic">
+                  <img src="./img/story4.jpg" alt="핏블리">
+                </a>
+                <div class="storyDesc">
+                  <a href="#">
+                    <p>bread video</p>
+                    <h3>파리바게뜨X무안군 행복상생 프로젝트</h3>
+                    <span>파바가 문안 햇양파랑 만났다! 지금 파바에서 무안 햇양파로 만든 따끈따끈한 양파빵 시리즈를 만나보세요</span>
+                  </a>
+                  <em>2021-07-02</em>
+                </div>
               </li>
             </ul>
           </div>
@@ -161,7 +196,7 @@
 
   var wHeight = $(window).height();
     var dHeight = $(document).height();
-    var navHeight = $("#nav").outerHeight();
+    var navHeight = $(".header").outerHeight();
     var lastScrollTop = 0;
     var moveScroll;
 
@@ -181,12 +216,12 @@
 
       if(wScroll > lastScrollTop && wScroll > navHeight){
         //스크롤을 내렸을때
-        $("#nav").addClass("on");
+        $(".header").addClass("on");
 
       }else{
         //스크롤을 올렸을때
         if(wScroll + wHeight < dHeight){
-          $("#nav").removeClass("on")
+          $(".header").removeClass("on")
         }
       }
       lastScrollTop = wScroll;

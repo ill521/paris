@@ -17,7 +17,6 @@ body{height: 3000px;}
 .header .mRight li:after {content: '';display: block;border-bottom: 5px solid #fff;margin-top: -5px;transform: scaleX(0);transition: transform .25s ease-in-out;transform-origin: 0% 50%;}
 .header .mRight li:hover:after {transform: scaleX(1);}
 .header .mRight li a {color: #fff;text-transform: uppercase;font-size: 15px;font-weight: 550;text-align: center;padding: 0 20px;}
-.header .mRight li:last-child {}
 .header .mRight li:last-child img {width: 20px;height: 20px;margin-bottom: -8px}
 
 /* slider */
@@ -33,11 +32,13 @@ body{height: 3000px;}
 .slick-dots li:hover button {background: #000;}
 .slick-dots li.slick-active button {background: #4168a4;}
 
+/* contents 공통 */
+.pb {float: left;font-size: 28px;font-family: 'Red Hat Text';text-transform: uppercase;font-weight: 500;}
+.showMore {float: right;font-family: 'Noto Sans KR';font-weight: 500;font-size: 15px;text-transform: uppercase;margin-top: 10px;}
+.showMore:after {content: '';border-bottom: 2px solid #000;display: block;margin-top: 5px;}
+
 /* pb magazine */
 .pbM {overflow: hidden;}
-.pbM .pb {float: left;font-size: 28px;font-family: 'Red Hat Text';text-transform: uppercase;font-weight: 500;}
-.pbM .showMore {float: right;font-family: 'Noto Sans KR';font-weight: 500;font-size: 15px;text-transform: uppercase;margin-top: 10px;}
-.pbM .showMore:after {content: '';border-bottom: 2px solid #000;display: block;margin-top: 5px;}
 .pbM ul {display: flex;flex-wrap: wrap;float: left;margin: -12px;margin-top: 40px;}
 .pbM ul li {flex:0 1 33.333%;width: 33.333%;max-width: 33.333%;padding: 12px;position: relative;}
 .pbM ul li > :after {background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,.5));height: 50%;display: block;content: '';position: absolute;bottom: 0;left: 0;right: 0;transition: height .3s;}
@@ -51,3 +52,21 @@ body{height: 3000px;}
 .pbM ul li .listItem .itemdesc a h3:hover strong {border-bottom: 2px solid #fff;}
 .pbM ul li .listItem .itemdesc a p span {display: inline-block;font-weight: 100;}
 .pbM ul li .listItem .itemdesc a p:hover span{border-bottom: 2px solid #fff;}
+
+/* pb story */
+.pbS {margin-top: 120px;}
+.pbS ul {display: flex;flex-wrap: wrap;float: left;margin: -12px;margin-top: 20px;}
+.pbS ul li {display:flex;flex: 1 50%; width: 50%;max-width: 50%;padding: 12px;box-sizing: border-box;}
+.pbS ul li .storyPic {flex:1 50%;width: 50%;position: relative;}
+.pbS ul li .storyPic:after {background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,.6));height: 0;display: block;content: '';position: absolute;bottom: 0;left: 0;right: 0;transition: all 0.2s ease-out;}
+.pbS ul li .storyPic:hover:after {background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,.6));height: 80%;display: block;content: '';position: absolute;bottom: 0;left: 0;right: 0;}
+.pbS ul li .storyPic img {width: 350px;height: 350px;}
+.pbS ul li .storyDesc {padding: 0 45px;}
+.pbS ul li .storyDesc p {font-weight: 300;color: #023586;font-family: 'Noto Sans KR';margin-bottom: 30px;text-transform: uppercase;display: inline-block;}
+.pbS ul li .storyDesc h3 {font-size: 24px;font-family: 'Red Hat Text';font-weight: 700;margin-bottom: 25px;}
+.pbS ul li .storyDesc span {font-weight: 300;color: 4a4a4a;font-family: 'Noto Sans KR';font-size: 14px;letter-spacing: 2px;}
+.pbS ul li em {display: block;margin-top: 30px;font-size: 10px;}
+.pbS ul li .storyDesc a p:hover {text-decoration: underline;}
+.pbS ul li .storyDesc a h3:hover {text-decoration: underline;}
+.pbS ul li .storyDesc a span:hover {text-decoration: underline;}
+
