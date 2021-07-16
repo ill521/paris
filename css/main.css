@@ -20,12 +20,12 @@ body{height: 3000px;}
 .header .mRight li:last-child img {width: 20px;height: 20px;margin-bottom: -8px}
 
 /* slider */
-#slider {position: relative;margin-bottom: 200px;}
-.slick-slide{filter: brightness(70%)}
-.slick-slide:hover {filter: none;}
-.slider div a img {width: 100%;}
-#slider .prev {position: absolute;left: 0;top: 45%;transform: translateY(-50%);}
-#slider .next {position: absolute;right: 0;;top: 45%;transform: translateY(-50%);}
+#sliderA {position: relative;margin-bottom: 200px;}
+#sliderA .slick-slide{filter: brightness(70%)}
+#sliderA .slick-slide:hover {filter: none;}
+#sliderA .sliderA div a img {width: 100%;}
+#sliderA .prevA {position: absolute;left: 0;top: 45%;transform: translateY(-50%);}
+#sliderA .nextB {position: absolute;right: 0;;top: 45%;transform: translateY(-50%);}
 .slick-dots {position: relative; position: absolute;bottom: -50px;left: 50%;}
 .slick-dots li {float: left;}
 .slick-dots li button {width:20px; height:20px; background: #a3aab0;border-radius: 50%;border-style: none;text-indent: -9999px;margin-right: 10px}
@@ -59,7 +59,7 @@ body{height: 3000px;}
 .pbS ul li {display:flex;flex: 1 50%; width: 50%;max-width: 50%;padding: 12px;box-sizing: border-box;}
 .pbS ul li .storyPic {flex:1 50%;width: 50%;position: relative;}
 .pbS ul li .storyPic:after {background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,.6));height: 0;display: block;content: '';position: absolute;bottom: 0;left: 0;right: 0;transition: all 0.2s ease-out;}
-.pbS ul li .storyPic:hover:after {background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,.6));height: 80%;display: block;content: '';position: absolute;bottom: 0;left: 0;right: 0;}
+.pbS ul li .storyPic:hover:after {height: 80%;}
 .pbS ul li .storyPic img {width: 350px;height: 350px;}
 .pbS ul li .storyDesc {padding: 0 45px;}
 .pbS ul li .storyDesc p {font-weight: 300;color: #023586;font-family: 'Noto Sans KR';margin-bottom: 30px;text-transform: uppercase;display: inline-block;}
@@ -69,4 +69,46 @@ body{height: 3000px;}
 .pbS ul li .storyDesc a p:hover {text-decoration: underline;}
 .pbS ul li .storyDesc a h3:hover {text-decoration: underline;}
 .pbS ul li .storyDesc a span:hover {text-decoration: underline;}
+
+
+/* promotion */
+.promotion {margin-top: 100px;display: inline-block;margin-bottom: 200px;}
+.promotion ul {display: flex;flex-wrap: wrap;float: left;margin: -12px;margin-top: 20px;}
+.promotion ul li {flex: 1 25%;width: 25%;max-width:25%;padding: 12px;position: relative;}
+.promotion ul li .promoPic a {position: relative;display: block;}
+.promotion ul li .promoPic a img {width: 100%;;display: block;}
+.promotion ul li .promoPic a:after {background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,.6));height: 80%;display: block;content: '';position: absolute;bottom: 0;left: 0;right: 0;opacity: 0;transition: opacity 0.2s ease-out;}
+.promotion ul li .promoPic a:hover:after {opacity: 1;}
+.promotion ul li .promoPic a span {font-size: 10px;font-weight: 500;background: #023586;color: #fff;padding: 4px 10px;position: absolute;top:0;left: 0;}
+.promotion ul li .promoDesc span {color: #023586;margin:20px 0;display: inline-block;;}
+.promotion ul li .promoDesc a h3 {font-family: 'Red Hat Text';font-size: 22px;margin-bottom: 20px;;}
+.promotion ul li .promoDesc a p {color: #888888;font-family: 'Noto Sans KR';font-size: 12px;}
+
+/* product */
+.product {overflow: hidden}
+.sliderB {display: inline-block;margin-top: 100px;padding: 50px;}
+.sliderB div a {}
+.sliderB div a{}
+.slideborder {position: relative;display: inline-block;}
+.slideborder:hover:after {content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.0) 0%,rgba(0,0,0,.6) 80%); /* Chrome10+,Safari5.1+ */
+  } 
+.product .slider-container{position: relative;}
+.product .slider-container .prevA3 {position: absolute;left:0 ;top:35%;transform: translateY(-50%);}
+.product .slider-container .nextB3 {position: absolute;right: 0;top: 35%;transform: translateY(-50%);}
+.sliderB div a h3 {margin-top: 30px;}
+.sliderB div a:hover h3 {text-decoration: underline;}
+.sliderB div a:hover h4{text-decoration: underline;}
+.sliderB div a h4 {margin-top: 18px;font-size: 15px;color: #b7b7b7;width: 250px;}
+.sliderB div a img {width: 100%;display: block;margin: -10px;}
+
+/* instagram */
+.instagram {text-align: center;}
+.instagram a {}
+.instagram a h2 {font-size: 28px;margin-top: 100px;}
+.instagram p {margin-top: 50px;}
 

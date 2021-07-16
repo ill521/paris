@@ -131,8 +131,3 @@ body {font-family: 'Noto Sans KR','Lato','Montserrat', sans-serif;}
 *zoom: 1;
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
