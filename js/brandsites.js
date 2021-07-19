@@ -3,13 +3,17 @@
 //   $(".checklist").slideToggle();
 // })
 
-jQuery('.checklist').slideUp(0);
+// $(".checkbox").click(function(e){
+//     e.preventDefault();
+//     $(".checklist").css({display:"block"}).animate({top: -350},500);
+// })
 
-                            jQuery(function($){
-                                $('checklist a[href="#"]').removeAttr('href');
-                                $('.checkbox').on('click', function(e){
-                                    e.preventDefault();
-                                    $('.checklist').slideToggle(400);
+// $(".checkbox").click(function(e){
+//     e.preventDefault();
+//     $(".checklist").animate({height:'+=250'},1000);
+// })
 
-                                });
-                            });
+$('.checkbox').click(function(e){
+    e.preventDefault();
+    $('.checklist').toggleClass('active');
+  });

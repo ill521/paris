@@ -17,27 +17,127 @@
       
 </head>
 <body>
+  <article class="popup pop-down">
+    <div class="popupBanner">
+      <p>
+        <a href="#">
+          <img src="./img/popup1.jpg" alt="popup1" class="popup1">
+          <img src="./img/popup2.jpeg" alt="popup2" class="popup2">
+        </a>
+      </p>
+      <div class='popupbutton'>
+        <button class="close" aria-label="Close">X</button>
+      </div>
+    </div>
+  </article>
   <div id="wrap">
-    <header id="header">
+    <header id="header" class="nav-down">
       <div class="container">
-        <div class="row">
-          <div class="header">
-            <ul class="mLeft">
-              <li><a href="#">pb magazine</a></li>
-              <li><a href="#">pb story</a></li>
-              <li><a href="#">products</a></li>
-            </ul>
-            <h2><a href="#"><img src="./img/logo.png" alt="paris baguette logo"></a></h2>
-            <ul class=mRight>
-              <li><a href="#">store</a></li>
-              <li><a href="#">delivery</a></li>
-              <li><a href="#">promotion</a></li>
-              <a href=""><i class="fa fa-search" aria-hidden="true" style="color:white"></i></a>
-            </ul>
+        <h1 class="brand">
+          <a href="#">PARIS BAGUETTE</a>
+        </h1>
+        <nav id="nav">
+          <div class="gnb">
+            <div class="gnb-left">
+              <ul class="left-menu">
+                <li>
+                  <a href="#"><span>PB MAGAZINE</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>PB STORY</span></a>
+                </li>
+                <li class="products">
+                  <a href="#"><span>PRODUCTS</span></a>
+                  <div class="mega-menu">
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#"></a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="#">
+                              <span>전체</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span>브레드</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span>케이크</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span>샌드위치/샐러드</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="sub-menu">
+                          <li>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="#">
+                                  <span>선물</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span>디저트/스낵</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span>음료/아이스</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span>간편식</span>
+                                </a>
+                              </li>
+                            </ul>
+                      </li>
+                      <li></li>
+                    </ul>
+                    <a href="#" class="subBanner">
+                      <img src="./img/productimg.jpeg" alt="productimg">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="gnb-right">
+              <ul class="right-menu">
+                <li>
+                  <a href="#">
+                    <span>STORE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>DELIVERY</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>PROMOTION</span>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn-search">
+                <i class="material-icons">search</i>
+              </a>
+            </div>
           </div>
-        </div>
+        </nav>
+          
+          
+        
       </div>
     </header>
+    
     <!--//header-->
     <div id="sliderA">
       <div class="slider-container">
@@ -668,63 +768,12 @@
   <script src="./js/sliderA.js"></script>
   <script src="./js/sliderB.js"></script>
   <script src="./js/brandsites.js"></script>
+  <script src="./js/scrollnav.js"></script>
+  <script src="./js/scollbanner.js"></script>
+  
   <script>
     
-    // $(function(){
-
-    //   $(".slider-container").each(function(key,item){
-
-    //     let mainsliderName = "sliderA" + key;
-    //     let secsliderName = "sliderB" + key;
-
-    //     this.id = mainsliderName;
-    //     $(".sliderB")[key].id = secsliderName;
-
-    //     let mainsliderName = "#" + mainsliderName;
-    //     let secsliderName = "#" + secsliderName;
-
-    //     $('#sliderA').slick({
-    //       infinite: true,
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //       dots: true,
-    //       arrows: true,
-    //       prevArrow: $('#arrow_prev'),
-    //       nextArrow: $('#arrow_next'),
-    //    });
-
-
-    //    $('.sliderB').slick({
-    //       infinite: true,
-    //       slidesToShow: 5,
-    //       slidesToScroll: 1,
-    //    });
-
-    //   })
-    // })
-
-
-      //   $('.sliderA').slick({
-      //     infinite: true,
-      //     slidesToShow: 3,
-      //     slidesToScroll: 1,
-      //     dots: true,
-      //     arrows: true,
-      //     prevArrow: $('#arrow_prev'),
-      //     nextArrow: $('#arrow_next'),
-      //  });
-
-      //  $('.product .sliderB').slick({
-      //     infinite: true,
-      //     slidesToShow: 5,
-      //     slidesToScroll: 1,
-      //     arrows: true,
-      //     prevArrow: $('#arrow_prev'),
-      //     nextArrow: $('#arrow_next'),
-      //  });
-
-
- 
+    
   </script>
 
 </body>
