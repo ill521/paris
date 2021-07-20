@@ -281,4 +281,11 @@ li{box-sizing: border-box;}
   .pbM ul li {flex:1 100%;max-width: 100%;}
 }
 
-@media (max-width: 520px) {}
+@media (max-width: 520px) {
+  .mobile-nav ul li {font-size: 12px;}
+}
+
+
+@media (max-width: 375px) {
+
+}
