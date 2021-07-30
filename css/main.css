@@ -1,9 +1,10 @@
 @charset "utf-8";
 li{box-sizing: border-box;}
-.container {max-width: 1420px;;margin: 0 auto;}
+.container {max-width: 1280px;margin: 0 auto;}
+
 
 /* header */
-#header {background: #023586;position: fixed;top: 0;left: 0;right: 0;height: 90px;z-index: 1000;}
+#header {background: #023586;position: fixed;top: 0;left: 0;right: 0;height: 90px;z-index: 1000;width: 100%;}
 #header .brand {position: absolute;top: 50%;left: 50%;z-index: 2;transform: translate(-50%,-50%);}
 #header .brand a {font-size: 28px;color: #fff;font-weight: 500;white-space: nowrap;display: block;overflow: hidden;width: 250px;height: 18px;background: url(https://www.paris.co.kr/wp-content/themes/paris/assets/css/../img/logo.svg);background-size: contain;text-indent: -9999px;}
 #header #nav .gnb {height: 100%;display: flex;align-items: center;}
@@ -180,7 +181,7 @@ li{box-sizing: border-box;}
 #footer .checklist ul li ul li:hover {background: #747c88;}
 
 /* 우측탑 배너 */
-.popup {position: fixed;top: 90px;right: -194px;z-index: 100;}
+.popup {position: fixed;top: 90px;right: 0;z-index: 100;}
 .popup .popupBanner {position: relative;}
 .popup .popupBanner p a img.popup1{width: 60%;}
 .popup .popupBanner p a img.popup2{width: 65%;display: none;}
@@ -206,7 +207,7 @@ li{box-sizing: border-box;}
 
 
 /* search bar */
-#search {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);transition: all .4s ease-out;opacity: 0;visibility: hidden;}
+#search {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);transition: all .4s ease-out;opacity: 0;visibility: hidden;width: 100%;}
 #search.active {z-index: 10000;opacity: 1;visibility: visible;}
 #search .search-header {height: 90px;background: #fff;display: flex;transition: transform .2s ease-out;}
 #search .search-header form {flex: 1;}
@@ -240,7 +241,7 @@ li{box-sizing: border-box;}
 .mobileSns a span {line-height: 30px;margin-left: 8px}
 
 @media (max-width: 1024px) {
-  .container {padding: 0 20px;}
+  #header {width: 1024px;}
   .left-menu,.right-menu {opacity: 0;}
   .ham {display: block;z-index: 100;}
   .mobile-nav{z-index: 101;}
