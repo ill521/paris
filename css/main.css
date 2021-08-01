@@ -168,7 +168,7 @@ li{box-sizing: border-box;}
 #footer .footer-middle ul li:last-child:after {content: '';}
 #footer .footer-middle ul li.redtext span {color: red;}
 #footer .footer-bottom {border-top: 1px solid #888888;margin-top: 10px}
-#footer .footer-bottom li p {font-size: 12px;text-align: center;margin-top: 10px;color: #a3aab0;}
+#footer .footer-bottom p {font-size: 12px;text-align: center;margin-top: 10px;color: #a3aab0;}
 
 #footer .checkbox {display: inline-block;width: 200px;height: 50px;border: 1px solid #888888;padding: 0 20px;border-radius: 5px;}
 #footer .checkbox p {float: left;line-height: 50px;}
@@ -287,7 +287,3 @@ li{box-sizing: border-box;}
   .mobile-nav ul li {font-size: 12px;}
 }
 
-
-@media (max-width: 375px) {
-
-}
